@@ -53,8 +53,8 @@ select = ["ALL"]
 
 [tool.poe.tasks]
 install = "poetry run pre-commit install"
-lint = "poetry run ruff check ./src/python_library_template/*.py"
-format = "poetry run black ./src/python_library_template/*.py"
+lint = "poetry run ruff check ./src"
+format = "poetry run black ./src"
 export = "poetry export -f requirements.txt -o requirements.txt --only main --without-hashes"
 
 [build-system]
